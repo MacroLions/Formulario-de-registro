@@ -1,5 +1,48 @@
-<!FILETYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de registro</title>
 </head>
+
 <body>
+    <h1 align="center"><u>Sign up now!</u></h1>
+    <form method="GET" action="#">
+        
+        <fieldset>
+            <legend>Personal</legend>
+            <label for="name">Name: <input id="name" placeholder="Name" name="name" type="text" required></label>
+            <label for="birth">Date of birth: <input id="birth" placeholder="31/10/1998" name="birth" type="date" required>  </label>
+            <label for="animal">Favorite animal: <input id="animal" placeholder="Cat" name="animal" type="text" required>  </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Account</legend>
+            <label for="email">Email: <input id="email" placeholder="Name@Example.com" name="email" type="email" required></label>
+            <label for="password">Password: <input id="password" placeholder="Password" name="password" type="password" required>  </label>
+            <label for="passwordconfirm">Confirm password: <input id="passwordconfirm" placeholder="Repeat password" name="passwordconfirm" type="password" required>  </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="address">Address: <input id="address" placeholder="" name="address" type="text" required></label>
+            <label for="city">City: <input id="city" placeholder="San Salvador" name="city" type="text" required>  </label>
+            <label for="country">Country: <input id="country" placeholder="El Salvador" name="country" type="text" required> </label>
+            <label for="phone">Phone number: <input id="phone" placeholder="+50378854414" name="phone" type="text" required> </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Everything done?</legend>
+            <input type="submit" value="Send!" formmethod="GET">
+            <input type="reset" value="Reset all!">
+            <input type="button" onclick="location.href='https://www.google.com/'" value="Quit!">
+        </fieldset>
+
+    </form>
+
 </body>
+
+</html>
