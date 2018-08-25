@@ -14,7 +14,7 @@
         
         <fieldset>
             <legend>Personal</legend>
-            <label for="name">Name: <input id="name" placeholder="Name" name="name" type="text" required></label>
+            <label for="name">Name: <input id="name" placeholder="Name" name="name" type="text" pattern="[A-Za-z]{3,15}" required></label>
             <label for="birth">Date of birth: <input id="birth" placeholder="31/10/1998" name="birth" type="date" required>  </label>
             <label for="animal">Favorite animal: <input id="animal" placeholder="Cat" name="animal" type="text" required>  </label>
         </fieldset>
@@ -22,16 +22,16 @@
         <fieldset>
             <legend>Account</legend>
             <label for="email">Email: <input id="email" placeholder="Name@Example.com" name="email" type="email" required></label>
-            <label for="password">Password: <input id="password" placeholder="Password" name="password" type="password" required>  </label>
-            <label for="passwordconfirm">Confirm password: <input id="passwordconfirm" placeholder="Repeat password" name="passwordconfirm" type="password" required>  </label>
+            <label for="password">Password (5-15): <input id="password" placeholder="Password" name="password" type="password" pattern="{5,15}" required>  </label>
+            <label for="passwordconfirm">Confirm password: <input id="passwordconfirm" placeholder="Repeat password" name="passwordconfirm" type="password" pattern="{5,15}" required>  </label>
         </fieldset>
         <br>
         <fieldset>
             <legend>Contact</legend>
-            <label for="address">Address: <input id="address" placeholder="" name="address" type="text" required></label>
-            <label for="city">City: <input id="city" placeholder="San Salvador" name="city" type="text" required>  </label>
-            <label for="country">Country: <input id="country" placeholder="El Salvador" name="country" type="text" required> </label>
-            <label for="phone">Phone number: <input id="phone" placeholder="+50378854414" name="phone" type="text" required> </label>
+            <label for="address">Address: <input id="address" placeholder="" name="address" type="text" required ></label>
+            <label for="city">City: <input id="city" placeholder="San Salvador" name="city" type="text" pattern="{5,20}" required >  </label>
+            <label for="country">Country: <input id="country" placeholder="El Salvador" name="country" type="text" pattern="{5,20}" required> </label>
+            <label for="phone">Phone number: <input id="phone" placeholder="78854414" name="phone" type="text" pattern="{8}" pattern="" required> </label>
         </fieldset>
         <br>
         <fieldset>
